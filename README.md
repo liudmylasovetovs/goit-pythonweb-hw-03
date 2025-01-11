@@ -1,24 +1,24 @@
-###Збілдити докер
+1. Збілдити докер
 
 docker build -t fullstack-web-app .
 
 docker run -d -p 3000:3000 fullstack-web-app
 
 
-###Запустити без докеру
+2. Запустити без докеру
 
-##Створити енвайронмент
+  2.1. Створити енвайронмент
 
-python -m venv venv
+  python -m venv venv
 
-##активувати
+  2.2. активувати
 
-venv\Scripts\activate
+  venv\Scripts\activate
 
-##встановити requirements
+  2.3. встановити requirements
 
-pip install -r requirements.txt
+  pip install -r requirements.txt
 
-##запустити
+  2.4. запустити
 
-python main.py
+  python main.py
