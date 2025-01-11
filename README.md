@@ -1,26 +1,24 @@
-Build the Docker Image:
+###Збілдити докер
+
 docker build -t fullstack-web-app .
 
-Run the Docker Container:
-docker run -d -p 3000:3000 -v $(pwd)/storage:/app/storage fullstack-web-app
+docker run -d -p 3000:3000 fullstack-web-app
 
--p 3000:3000 maps port 3000 in the container to port 3000 on your host machine.
 
--v $(pwd)/storage:/app/storage ensures that the data.json file persists outside the container.
+###Запустити без докеру
 
-Running the App Without Docker
-Set Up a Virtual Environment (Optional):
+##Створити енвайронмент
 
 python -m venv venv
 
-Activate the Virtual Environment:
+##активувати
 
 venv\Scripts\activate
 
-Install Required Dependencies:
+##встановити requirements
 
 pip install -r requirements.txt
 
-Run the Application:
+##запустити
 
 python main.py
